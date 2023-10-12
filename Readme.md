@@ -1,9 +1,10 @@
 # Для запуска:
 
 1. Установить Docker и docker-compose
-2. Склонировать этот репозиторий в необходимую директорию и зайти в склонированный проект
-3. Запустить команду `sudo docker-compose up --build`
-4. Для тестирования можно выполнить такой запрос:
+2. Склонировать этот репозиторий в необходимую директорию: `git clone git@github.com:artem-git-hub/task_bewise_ai.git`
+3. Зайти в склонированный проект
+4. Запустить команду `sudo docker-compose up --build`
+5. Для тестирования можно выполнить такой запрос в новом окне терминала:
 ```bash
 curl -X POST -H "Content-Type: application/json" -d '{"questions_num": 5}' http://localhost:8000/get_questions/
 ```
